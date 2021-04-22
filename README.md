@@ -30,3 +30,6 @@ e.g:
 `nlg:`
 
     url: https://rasa-nlg.herokuapp.com/nlg
+
+**How to remove your app from Kaffeine**
+- [http://kaffeine.herokuapp.com/#decaf](http://kaffeine.herokuapp.com/#decaf)
