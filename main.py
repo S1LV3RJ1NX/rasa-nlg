@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-SERVICE_FILE_KEY = os.getenv('GSHEET_KEY') #google api file
-SERVICE_FILE = 'nlg-service.json'
+SERVICE_FILE_KEY = os.getenv('GSHEET_KEY') # google api env key
+SERVICE_FILE = 'nlg-service.json' # google api file (not in use)
 SPREADSHEET = 'NLG Responses'
 WORKSHEET_IDX = 1 # worksheet index starting from zero
 
