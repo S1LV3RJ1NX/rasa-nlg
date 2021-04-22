@@ -1,0 +1,5 @@
+**/__pycache__/
+nlg-service.json
+.env
+venv
+.deta

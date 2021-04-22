@@ -1,0 +1,4 @@
+fastapi[all]
+gspread
+google-api-python-client
+oauth2client
