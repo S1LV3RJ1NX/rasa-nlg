@@ -25,10 +25,10 @@ class GSheet:
     @staticmethod
     def create_nlg_data(spreadsheet_name, worksheet_idx):
 
-        # creds_dict = json.loads(SERVICE_FILE)
-        # creds_dict["private_key"] = creds_dict["private_key"].replace("\\\\n", "\n")
-        # creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, GSheet.scope)
-        creds = ServiceAccountCredentials.from_json_keyfile_name(SERVICE_FILE, GSheet.scope)
+        creds_dict = json.loads(SERVICE_FILE)
+        creds_dict["private_key"] = creds_dict["private_key"].replace("\\\\n", "\n")
+        creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, GSheet.scope)
+        # creds = ServiceAccountCredentials.from_json_keyfile_name(SERVICE_FILE, GSheet.scope)
         client = gspread.authorize(creds)
 
         sheet = client.open(spreadsheet_name)
